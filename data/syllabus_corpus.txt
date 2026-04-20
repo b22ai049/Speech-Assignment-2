@@ -1,0 +1,69 @@
+
+Introduction to Speech Processing and Technology.
+Digital Signal Processing fundamentals for speech.
+Speech production mechanism: articulatory phonetics and acoustic phonetics.
+Source-filter model of speech production.
+The vocal tract transfer function and formant frequencies.
+Sampling theorem, Nyquist rate, and aliasing in speech signals.
+Quantization, pulse code modulation PCM.
+Time domain analysis: energy, zero crossing rate ZCR, autocorrelation.
+Short-time Fourier Transform STFT and spectrogram analysis.
+Window functions: Hamming, Hanning, rectangular windows.
+Discrete Fourier Transform DFT and Fast Fourier Transform FFT.
+Filter banks: Mel scale, Bark scale, ERB scale.
+Cepstral analysis and the cepstrum.
+Mel Frequency Cepstral Coefficients MFCC extraction pipeline.
+Delta and acceleration coefficients for dynamic features.
+Linear Predictive Coding LPC and linear prediction analysis.
+Line Spectral Pairs LSP and reflection coefficients.
+Fundamental frequency F0 estimation: autocorrelation method, cepstral method.
+Pitch tracking algorithms: RAPT, SWIPE, YIN, pYIN, CREPE.
+Formant estimation and tracking.
+Hidden Markov Models HMM for speech recognition.
+Gaussian Mixture Models GMM for acoustic modeling.
+Viterbi algorithm for decoding.
+Baum-Welch algorithm for HMM training.
+Expectation Maximization EM algorithm.
+Deep Neural Networks DNN for acoustic modeling.
+Recurrent Neural Networks: LSTM and GRU architectures.
+Attention mechanisms and Transformer architecture.
+Connectionist Temporal Classification CTC.
+End-to-end speech recognition: Listen Attend and Spell LAS.
+Wav2Vec 2.0 and self-supervised learning for speech.
+HuBERT and data-driven speech representations.
+Whisper: robust speech recognition via large-scale weak supervision.
+Conformer architecture for speech recognition.
+Language modeling: N-gram models, neural language models.
+Beam search decoding and constrained decoding.
+Word Error Rate WER and evaluation metrics.
+Speaker recognition: verification and identification.
+Speaker embeddings: i-vectors, d-vectors, x-vectors.
+ECAPA-TDNN for speaker verification.
+Speaker diarization: who spoke when.
+Text-to-Speech synthesis: concatenative, parametric, neural TTS.
+Tacotron and Tacotron 2 architecture.
+WaveNet vocoder and autoregressive generation.
+WaveRNN and WaveGlow for fast synthesis.
+VITS: Variational Inference with adversarial learning.
+Voice conversion and voice cloning.
+Zero-shot voice cloning with speaker embeddings.
+YourTTS and multilingual voice cloning.
+Prosody modeling: F0, duration, energy contours.
+Speech enhancement and noise reduction.
+Spectral subtraction and Wiener filtering.
+Deep learning for speech enhancement: Conv-TasNet, DCCRN.
+Speech separation: deep clustering, permutation invariant training.
+Robust speech recognition in noisy environments.
+Code-switching in multilingual speech processing.
+Language identification LID at utterance and frame level.
+Cross-lingual and multilingual speech processing.
+Low-resource language speech technology.
+Adversarial attacks on speech systems.
+Anti-spoofing and countermeasures for speaker verification.
+LFCC and CQCC features for spoofing detection.
+Equal Error Rate EER for evaluation.
+Stochastic processes in speech modeling.
+International Phonetic Alphabet IPA for phonetic transcription.
+Grapheme-to-Phoneme G2P conversion.
+Dynamic Time Warping DTW for speech alignment.
+Mel-Cepstral Distortion MCD for speech quality evaluation.

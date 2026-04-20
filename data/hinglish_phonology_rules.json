@@ -1,0 +1,73 @@
+{
+  "hinglish_rules": [
+    {
+      "pattern": "matlab",
+      "ipa": "mətləb",
+      "note": "Hindi discourse marker meaning 'meaning/that is'"
+    },
+    {
+      "pattern": "accha",
+      "ipa": "ətʃːaː",
+      "note": "Hindi 'okay/good'"
+    },
+    {
+      "pattern": "toh",
+      "ipa": "toː",
+      "note": "Hindi conjunction 'so/then'"
+    },
+    {
+      "pattern": "hai",
+      "ipa": "ɦæː",
+      "note": "Hindi copula 'is'"
+    },
+    {
+      "pattern": "hain",
+      "ipa": "ɦæːn",
+      "note": "Hindi copula plural 'are'"
+    },
+    {
+      "pattern": "kya",
+      "ipa": "kjɑː",
+      "note": "Hindi question word 'what'"
+    },
+    {
+      "pattern": "nahi",
+      "ipa": "nəɦiː",
+      "note": "Hindi negation 'no/not'"
+    },
+    {
+      "pattern": "aur",
+      "ipa": "ɔːr",
+      "note": "Hindi conjunction 'and'"
+    }
+  ],
+  "aspiration_rules": {
+    "bh": "bʰ",
+    "ch": "tʃʰ",
+    "dh": "dʰ",
+    "gh": "ɡʰ",
+    "jh": "dʒʰ",
+    "kh": "kʰ",
+    "ph": "pʰ",
+    "th": "tʰ"
+  },
+  "retroflex_rules": {
+    "T": "ʈ",
+    "Th": "ʈʰ",
+    "D": "ɖ",
+    "Dh": "ɖʰ",
+    "N": "ɳ"
+  },
+  "vowel_rules": {
+    "a": "ə",
+    "aa": "aː",
+    "i": "ɪ",
+    "ee": "iː",
+    "u": "ʊ",
+    "oo": "uː",
+    "e": "eː",
+    "ai": "æː",
+    "o": "oː",
+    "au": "ɔː"
+  }
+}

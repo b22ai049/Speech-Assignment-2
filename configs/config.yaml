@@ -1,0 +1,97 @@
+# Speech Assignment 2 Configuration
+
+# Audio settings
+audio:
+  sample_rate: 16000
+  output_sample_rate: 22050
+  frame_length_ms: 25
+  frame_shift_ms: 10
+  n_fft: 512
+  n_mels: 80
+
+# Denoising
+denoising:
+  method: "spectral_subtraction"  # or "deepfilternet"
+  noise_estimation_frames: 30
+  spectral_floor: 0.002
+  oversubtraction_factor: 1.5
+
+# Language Identification
+lid:
+  model: "speechbrain/lang-id-voxlingua107-ecapa"
+  frame_duration_ms: 500
+  overlap_ms: 250
+  min_f1_score: 0.85
+  languages: ["en", "hi"]
+  confidence_threshold: 0.6
+
+# Transcription
+transcription:
+  model: "base"
+  language: null  # null for auto-detect
+  task: "transcribe"
+  beam_size: 5
+  ngram_order: 3
+  logit_bias_weight: 2.5
+
+# IPA Conversion
+ipa:
+  english_backend: "epitran"
+  hindi_backend: "epitran"
+  custom_rules_file: "data/hinglish_phonology_rules.json"
+
+# Translation
+translation:
+  target_language: "mai"  # Maithili
+  target_language_name: "Maithili"
+  parallel_corpus_file: "data/parallel_corpus.json"
+  min_corpus_size: 500
+
+# Voice Cloning
+voice_cloning:
+  reference_audio: "student_voice_ref.wav"
+  reference_duration_sec: 60
+  embedding_type: "d-vector"  # or "x-vector"
+  model: "tts_models/multilingual/multi-dataset/your_tts"
+
+# Prosody
+prosody:
+  f0_method: "pyin"  # or "crepe"
+  dtw_constraint: "sakoe_chiba"
+  dtw_window_size: 50
+
+# Synthesis
+synthesis:
+  model: "vits"
+  output_sample_rate: 22050
+  output_file: "output_LRL_cloned.wav"
+
+# Anti-Spoofing
+anti_spoofing:
+  feature_type: "lfcc"  # or "cqcc"
+  n_coefficients: 20
+  classifier: "gmm"  # or "mlp"
+  target_eer: 0.10
+
+# Adversarial
+adversarial:
+  method: "fgsm"
+  min_snr_db: 40
+  segment_duration_sec: 5
+  target_flip: "hi_to_en"
+
+# Evaluation
+evaluation:
+  wer_english_threshold: 0.15
+  wer_hindi_threshold: 0.25
+  mcd_threshold: 8.0
+  lid_switch_tolerance_ms: 200
+  eer_threshold: 0.10
+
+# Paths
+paths:
+  original_audio: "original_segment.wav"
+  reference_voice: "student_voice_ref.wav"
+  output_dir: "outputs"
+  models_dir: "models"
+  data_dir: "data"
